@@ -26,7 +26,7 @@ class AddNewCountdownViewController: UIViewController {
     
     let dateFormatter: DateFormatter = {
         let df = DateFormatter()
-        df.timeStyle = .short
+        df.timeStyle = .medium
         df.dateStyle = .short
         return df
     }()
