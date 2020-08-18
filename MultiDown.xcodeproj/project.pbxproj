@@ -1,0 +1,400 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD65F40C24EA64F00032108C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD65F40B24EA64F00032108C /* AppDelegate.swift */; };
+		FD65F40E24EA64F00032108C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD65F40D24EA64F00032108C /* SceneDelegate.swift */; };
+		FD65F41024EA64F00032108C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD65F40F24EA64F00032108C /* ViewController.swift */; };
+		FD65F41324EA64F00032108C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD65F41124EA64F00032108C /* Main.storyboard */; };
+		FD65F41624EA64F00032108C /* MultiDown.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FD65F41424EA64F00032108C /* MultiDown.xcdatamodeld */; };
+		FD65F41824EA64F00032108C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD65F41724EA64F00032108C /* Assets.xcassets */; };
+		FD65F41B24EA64F00032108C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD65F41924EA64F00032108C /* LaunchScreen.storyboard */; };
+		FDDC45C024EA67BD00C490DA /* CountdownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDC45BF24EA67BD00C490DA /* CountdownCell.swift */; };
+		FDDC45CA24EA70CE00C490DA /* AddNewCountdownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDC45C924EA70CE00C490DA /* AddNewCountdownViewController.swift */; };
+		FDDC45CD24EBAE2900C490DA /* Countdown+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDC45CB24EBAE2900C490DA /* Countdown+CoreDataClass.swift */; };
+		FDDC45CE24EBAE2900C490DA /* Countdown+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDC45CC24EBAE2900C490DA /* Countdown+CoreDataProperties.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FD65F40824EA64F00032108C /* MultiDown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiDown.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD65F40B24EA64F00032108C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FD65F40D24EA64F00032108C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FD65F40F24EA64F00032108C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FD65F41224EA64F00032108C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FD65F41524EA64F00032108C /* MultiDown.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MultiDown.xcdatamodel; sourceTree = "<group>"; };
+		FD65F41724EA64F00032108C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD65F41A24EA64F00032108C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FD65F41C24EA64F00032108C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDDC45BF24EA67BD00C490DA /* CountdownCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownCell.swift; sourceTree = "<group>"; };
+		FDDC45C924EA70CE00C490DA /* AddNewCountdownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewCountdownViewController.swift; sourceTree = "<group>"; };
+		FDDC45CB24EBAE2900C490DA /* Countdown+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Countdown+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		FDDC45CC24EBAE2900C490DA /* Countdown+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Countdown+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD65F40524EA64F00032108C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD65F3FF24EA64F00032108C = {
+			isa = PBXGroup;
+			children = (
+				FD65F40A24EA64F00032108C /* MultiDown */,
+				FD65F40924EA64F00032108C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FD65F40924EA64F00032108C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD65F40824EA64F00032108C /* MultiDown.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD65F40A24EA64F00032108C /* MultiDown */ = {
+			isa = PBXGroup;
+			children = (
+				FDDC45C824EA70B000C490DA /* new count down */,
+				FDDC45C724EA709000C490DA /* count down list */,
+				FD65F40D24EA64F00032108C /* SceneDelegate.swift */,
+				FDDC45C624EA6DB400C490DA /* model */,
+				FD65F40B24EA64F00032108C /* AppDelegate.swift */,
+				FD65F41124EA64F00032108C /* Main.storyboard */,
+				FD65F41724EA64F00032108C /* Assets.xcassets */,
+				FD65F41924EA64F00032108C /* LaunchScreen.storyboard */,
+				FD65F41C24EA64F00032108C /* Info.plist */,
+			);
+			path = MultiDown;
+			sourceTree = "<group>";
+		};
+		FDDC45C624EA6DB400C490DA /* model */ = {
+			isa = PBXGroup;
+			children = (
+				FDDC45CB24EBAE2900C490DA /* Countdown+CoreDataClass.swift */,
+				FDDC45CC24EBAE2900C490DA /* Countdown+CoreDataProperties.swift */,
+				FD65F41424EA64F00032108C /* MultiDown.xcdatamodeld */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		FDDC45C724EA709000C490DA /* count down list */ = {
+			isa = PBXGroup;
+			children = (
+				FDDC45BF24EA67BD00C490DA /* CountdownCell.swift */,
+				FD65F40F24EA64F00032108C /* ViewController.swift */,
+			);
+			path = "count down list";
+			sourceTree = "<group>";
+		};
+		FDDC45C824EA70B000C490DA /* new count down */ = {
+			isa = PBXGroup;
+			children = (
+				FDDC45C924EA70CE00C490DA /* AddNewCountdownViewController.swift */,
+			);
+			path = "new count down";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD65F40724EA64F00032108C /* MultiDown */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD65F41F24EA64F00032108C /* Build configuration list for PBXNativeTarget "MultiDown" */;
+			buildPhases = (
+				FD65F40424EA64F00032108C /* Sources */,
+				FD65F40524EA64F00032108C /* Frameworks */,
+				FD65F40624EA64F00032108C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MultiDown;
+			productName = MultiDown;
+			productReference = FD65F40824EA64F00032108C /* MultiDown.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD65F40024EA64F00032108C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "-";
+				TargetAttributes = {
+					FD65F40724EA64F00032108C = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = FD65F40324EA64F00032108C /* Build configuration list for PBXProject "MultiDown" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD65F3FF24EA64F00032108C;
+			productRefGroup = FD65F40924EA64F00032108C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD65F40724EA64F00032108C /* MultiDown */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD65F40624EA64F00032108C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD65F41B24EA64F00032108C /* LaunchScreen.storyboard in Resources */,
+				FD65F41824EA64F00032108C /* Assets.xcassets in Resources */,
+				FD65F41324EA64F00032108C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD65F40424EA64F00032108C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD65F41024EA64F00032108C /* ViewController.swift in Sources */,
+				FDDC45CD24EBAE2900C490DA /* Countdown+CoreDataClass.swift in Sources */,
+				FDDC45CA24EA70CE00C490DA /* AddNewCountdownViewController.swift in Sources */,
+				FD65F41624EA64F00032108C /* MultiDown.xcdatamodeld in Sources */,
+				FD65F40C24EA64F00032108C /* AppDelegate.swift in Sources */,
+				FDDC45CE24EBAE2900C490DA /* Countdown+CoreDataProperties.swift in Sources */,
+				FD65F40E24EA64F00032108C /* SceneDelegate.swift in Sources */,
+				FDDC45C024EA67BD00C490DA /* CountdownCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FD65F41124EA64F00032108C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD65F41224EA64F00032108C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FD65F41924EA64F00032108C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD65F41A24EA64F00032108C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FD65F41D24EA64F00032108C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FD65F41E24EA64F00032108C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD65F42024EA64F00032108C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WTN44H2RDX;
+				INFOPLIST_FILE = MultiDown/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = au.id.mcmillan.MultiDown;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FD65F42124EA64F00032108C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WTN44H2RDX;
+				INFOPLIST_FILE = MultiDown/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = au.id.mcmillan.MultiDown;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD65F40324EA64F00032108C /* Build configuration list for PBXProject "MultiDown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD65F41D24EA64F00032108C /* Debug */,
+				FD65F41E24EA64F00032108C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD65F41F24EA64F00032108C /* Build configuration list for PBXNativeTarget "MultiDown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD65F42024EA64F00032108C /* Debug */,
+				FD65F42124EA64F00032108C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FD65F41424EA64F00032108C /* MultiDown.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FD65F41524EA64F00032108C /* MultiDown.xcdatamodel */,
+			);
+			currentVersion = FD65F41524EA64F00032108C /* MultiDown.xcdatamodel */;
+			path = MultiDown.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FD65F40024EA64F00032108C /* Project object */;
+}
