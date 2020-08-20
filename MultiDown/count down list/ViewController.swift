@@ -38,14 +38,18 @@ extension ViewController: UITableViewDelegate {
         defer {
             tableView.deselectRow(at: indexPath, animated: false)
         }
-        guard indexPath.section == 1 else {
-            return
+        
+        if indexPath.section == 0 {
+            editEntries { (item, i) in return (value: indexPath.row == i, key: "focused") }
+            tableView.reloadData()
+            
+        } else {
+            guard let vc = storyboard?.instantiateViewController(identifier: kModalSegue) as? AddNewCountdownViewController else {
+                return
+            }
+            vc.delegate = self
+            present(vc, animated: true)
         }
-        guard let vc = storyboard?.instantiateViewController(identifier: kModalSegue) as? AddNewCountdownViewController else {
-            return
-        }
-        vc.delegate = self
-        present(vc, animated: true)
         
     }
     
@@ -77,21 +81,14 @@ extension ViewController: UITableViewDelegate {
         items.remove(at: sourceIndexPath.row)
         items.insert(t, at: destinationIndexPath.row)
         
-        for (i, item) in items.enumerated() {
-            item.setValue(i, forKey: "order")
-        }
-        
-        let managedContext = ctx.persistentContainer.viewContext;
-        do {
-            try managedContext.save()
-        } catch let e { print(e) }
+        editEntries{ (item, i) in return (value: i, key: "order" )}
     }
     
 }
 
 // MARK: - table view datasource
 extension ViewController: UITableViewDataSource {
-    
+        
     func numberOfSections(in tableView: UITableView) -> Int {
         return 2
     }
@@ -115,6 +112,21 @@ extension ViewController: UITableViewDataSource {
 
 // MARK: - core data tingz
 extension ViewController: AddNewCountdownDelegate {
+    
+    func editEntries(withClosure closure:(_ item: Countdown, _ i: Int) -> (key: String, value: Any?)) {
+        
+        for (i, item) in items.enumerated() {
+            let result = closure(item, i)
+            item.setValue(result.value, forKey: result.key)
+        }
+        
+        let managedContext = ctx.persistentContainer.viewContext;
+        do {
+            try managedContext.save()
+        } catch let e { print(e) }
+        
+    }
+    
     func saveEntry(title: String, completion: Date) {
         let managedContext = ctx.persistentContainer.viewContext;
         guard let entity = NSEntityDescription.entity(forEntityName: "Countdown", in: managedContext) else {
@@ -125,11 +137,14 @@ extension ViewController: AddNewCountdownDelegate {
         entry.setValue(title, forKey: "title")
         entry.setValue(completion, forKey: "completion")
         entry.setValue(items.count, forKey: "order")
+        entry.setValue(false, forKey: "focused")
         
         do {
             try managedContext.save()
             fetchEntries(updateLayout: true)
-        } catch { }
+        } catch let e{
+            print(e)
+        }
     }
     
     func remove(_ indexPath: IndexPath) {
@@ -149,7 +164,7 @@ extension ViewController: AddNewCountdownDelegate {
         let managedContext = ctx.persistentContainer.viewContext;
         let request: NSFetchRequest<Countdown> = Countdown.fetchRequest()
         request.sortDescriptors = [NSSortDescriptor.init(key: "order", ascending: true)]
-        request.predicate = NSPredicate(format: "completion > %@", NSDate())
+        
         
         do {
             items = try managedContext.fetch(request)

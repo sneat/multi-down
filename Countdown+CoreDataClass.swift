@@ -2,7 +2,7 @@
 //  Countdown+CoreDataClass.swift
 //  MultiDown
 //
-//  Created by John Salami on 18/8/20.
+//  Created by John Salami on 20/8/20.
 //  Copyright © 2020 -. All rights reserved.
 //
 //

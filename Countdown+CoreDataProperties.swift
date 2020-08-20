@@ -2,7 +2,7 @@
 //  Countdown+CoreDataProperties.swift
 //  MultiDown
 //
-//  Created by John Salami on 18/8/20.
+//  Created by John Salami on 20/8/20.
 //  Copyright © 2020 -. All rights reserved.
 //
 //
@@ -18,7 +18,8 @@ extension Countdown {
     }
 
     @NSManaged public var completion: Date?
-    @NSManaged public var title: String?
     @NSManaged public var order: Int32
+    @NSManaged public var title: String?
+    @NSManaged public var focused: Bool
 
 }

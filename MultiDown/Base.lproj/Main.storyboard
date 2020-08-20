@@ -33,24 +33,24 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="countdown" id="5n0-QV-c6S" customClass="CountdownCell" customModule="MultiDown" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="95.5"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="83.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5n0-QV-c6S" id="12w-Bn-o0K">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="95.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="83.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10d 99h 12m 10s" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tth-jT-Ui6">
-                                            <rect key="frame" x="28" y="19" width="358" height="36.5"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                            <rect key="frame" x="28" y="19" width="358" height="24.5"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title of the thing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qgP-0W-Fkj">
-                                            <rect key="frame" x="28" y="55.5" width="358" height="21"/>
+                                            <rect key="frame" x="28" y="43.5" width="358" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="mde-Iv-UqD"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -71,7 +71,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="addnew" rowHeight="60" id="Fc6-U6-VSm">
-                                <rect key="frame" x="0.0" y="123.5" width="414" height="60"/>
+                                <rect key="frame" x="0.0" y="111.5" width="414" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Fc6-U6-VSm" id="1AA-qS-Wfi">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
