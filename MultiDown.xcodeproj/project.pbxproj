@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD45131824EE8E9600136A32 /* Countdown+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD45131624EE8E9600136A32 /* Countdown+CoreDataClass.swift */; };
+		FD45131924EE8E9600136A32 /* Countdown+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD45131724EE8E9600136A32 /* Countdown+CoreDataProperties.swift */; };
 		FD65F40C24EA64F00032108C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD65F40B24EA64F00032108C /* AppDelegate.swift */; };
 		FD65F40E24EA64F00032108C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD65F40D24EA64F00032108C /* SceneDelegate.swift */; };
 		FD65F41024EA64F00032108C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD65F40F24EA64F00032108C /* ViewController.swift */; };
@@ -16,11 +18,11 @@
 		FD65F41B24EA64F00032108C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD65F41924EA64F00032108C /* LaunchScreen.storyboard */; };
 		FDDC45C024EA67BD00C490DA /* CountdownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDC45BF24EA67BD00C490DA /* CountdownCell.swift */; };
 		FDDC45CA24EA70CE00C490DA /* AddNewCountdownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDC45C924EA70CE00C490DA /* AddNewCountdownViewController.swift */; };
-		FDDC45CD24EBAE2900C490DA /* Countdown+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDC45CB24EBAE2900C490DA /* Countdown+CoreDataClass.swift */; };
-		FDDC45CE24EBAE2900C490DA /* Countdown+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDC45CC24EBAE2900C490DA /* Countdown+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FD45131624EE8E9600136A32 /* Countdown+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Countdown+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		FD45131724EE8E9600136A32 /* Countdown+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Countdown+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		FD65F40824EA64F00032108C /* MultiDown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiDown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD65F40B24EA64F00032108C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD65F40D24EA64F00032108C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,8 +34,6 @@
 		FD65F41C24EA64F00032108C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDDC45BF24EA67BD00C490DA /* CountdownCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownCell.swift; sourceTree = "<group>"; };
 		FDDC45C924EA70CE00C490DA /* AddNewCountdownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewCountdownViewController.swift; sourceTree = "<group>"; };
-		FDDC45CB24EBAE2900C490DA /* Countdown+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Countdown+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		FDDC45CC24EBAE2900C490DA /* Countdown+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Countdown+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,8 +82,8 @@
 		FDDC45C624EA6DB400C490DA /* model */ = {
 			isa = PBXGroup;
 			children = (
-				FDDC45CB24EBAE2900C490DA /* Countdown+CoreDataClass.swift */,
-				FDDC45CC24EBAE2900C490DA /* Countdown+CoreDataProperties.swift */,
+				FD45131624EE8E9600136A32 /* Countdown+CoreDataClass.swift */,
+				FD45131724EE8E9600136A32 /* Countdown+CoreDataProperties.swift */,
 				FD65F41424EA64F00032108C /* MultiDown.xcdatamodeld */,
 			);
 			path = model;
@@ -178,11 +178,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD65F41024EA64F00032108C /* ViewController.swift in Sources */,
-				FDDC45CD24EBAE2900C490DA /* Countdown+CoreDataClass.swift in Sources */,
+				FD45131824EE8E9600136A32 /* Countdown+CoreDataClass.swift in Sources */,
 				FDDC45CA24EA70CE00C490DA /* AddNewCountdownViewController.swift in Sources */,
 				FD65F41624EA64F00032108C /* MultiDown.xcdatamodeld in Sources */,
 				FD65F40C24EA64F00032108C /* AppDelegate.swift in Sources */,
-				FDDC45CE24EBAE2900C490DA /* Countdown+CoreDataProperties.swift in Sources */,
+				FD45131924EE8E9600136A32 /* Countdown+CoreDataProperties.swift in Sources */,
 				FD65F40E24EA64F00032108C /* SceneDelegate.swift in Sources */,
 				FDDC45C024EA67BD00C490DA /* CountdownCell.swift in Sources */,
 			);

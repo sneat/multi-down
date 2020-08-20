@@ -16,6 +16,14 @@ public class CountdownCell: UITableViewCell {
     
     
     public func configure(item: Countdown) {
+        if item.focused {
+            title.font = UIFont.systemFont(ofSize: 26)
+            remaining.font = UIFont.boldSystemFont(ofSize: 40)
+        } else {
+            title.font = UIFont.systemFont(ofSize: 17)
+            remaining.font = UIFont.boldSystemFont(ofSize: 20)
+        }
+        
         title.text = item.title ?? "-"
         remaining.text = timeRemainingFormatted(duration(item))
         

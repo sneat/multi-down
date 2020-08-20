@@ -2,10 +2,11 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19D76" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Countdown" representedClassName="Countdown" syncable="YES">
         <attribute name="completion" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="focused" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="order" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="title" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="Countdown" positionX="-63" positionY="-18" width="128" height="88"/>
+        <element name="Countdown" positionX="-63" positionY="-18" width="128" height="103"/>
     </elements>
 </model>
